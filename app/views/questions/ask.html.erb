@@ -1,0 +1,16 @@
+<h1>Ask your coach anything</h1>
+
+<form action="/answer" data-turbo="false">
+  <label for="question">Your question</label>
+  <input type="text" id="question" name="question">
+  <input type="submit" value="Ask!">
+</form>
+<div class="coach-container">
+  <p class="coach-title">Ask your coach anything</p>
+
+  <form action="/answer" data-turbo="false">
+    <label for="question" class="visually-hidden">Your question</label>
+    <input type="text" id="question" name="question" class="form-control form-control-lg mb-3" placeholder="Type your question...">
+    <input type="submit" value="Ask!" class="btn btn-primary btn-lg w-100">
+  </form>
+</div>

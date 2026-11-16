@@ -1,0 +1,21 @@
+<h1>Your question</h1>
+<p><%= params[:question] %></p>
+
+<h1>The coach's answer</h1>
+<p><%= @answer %></p>
+
+<%= link_to "Ask another question", ask_path %>
+
+<p><%= params[:question] %></p>
+<p><%= @answer %></p>
+
+<%= link_to "Ask another question", ask_path %>
+<div class="coach-container">
+  <p class="text-muted mb-1">You asked</p>
+  <p class="coach-question"><%= params[:question] %></p>
+
+  <p class="text-muted mb-1">The coach says</p>
+  <p class="coach-answer"><%= @answer %></p>
+
+  <%= link_to "Ask another question", ask_path, class: "btn btn-outline-primary w-100" %>
+</div>
